@@ -4,7 +4,7 @@ import { isAPIKeyPopulated, getResponse } from './util';
 export function App() {
     // state for input and output
     const [input, setInput] = useState('');
-    const [output, setOutput] = useState('some response');
+    const [output, setOutput] = useState('response will show here');
 
     // function to handle input change
     const handleChange = (e) => {
@@ -43,16 +43,20 @@ export function App() {
     </>);
 
     return <>
+        {/* title */}
         <h1>AI Responses</h1>
         {/* form with input and an area to display output from an api call */}
         <form onSubmit={handleSubmit}>
+            <label htmlFor="prompt">Prompt</label>
             <input type="text" value={input} onChange={handleChange} />
-            <button type="submit" disabled={!input}>Submit</button>
-
+            <div id="controls">
+                <button type="reset" onClick={() => setInput('')}>Clear</button>
+                <button type="submit" disabled={!input}>Submit</button>
+            </div>
         </form>
         <div>
             <h2>Output</h2>
-            <p>{output}</p>
+            <p id="response-box">{output}</p>
         </div>
     </>
 }
