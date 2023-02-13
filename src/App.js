@@ -38,12 +38,12 @@ export function App() {
     }
 
     if (!isAPIKeyPopulated) return (<>
-        <h1>AI Autocomplete</h1>
+        <h1>AI Responses</h1>
         <p>Please add your API key to .env file</p>
     </>);
 
     return <>
-        <h1>AI Autocomplete</h1>
+        <h1>AI Responses</h1>
         {/* form with input and an area to display output from an api call */}
         <form onSubmit={handleSubmit}>
             <input type="text" value={input} onChange={handleChange} />
