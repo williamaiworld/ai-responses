@@ -1,5 +1,5 @@
 {
-  "name": "ai-autocomplete",
+  "name": "ai-responses",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,17 @@
   "keywords": [
     "ai",
     "openai",
-    "autocomplete",
+    "responses",
     "react"
   ],
   "author": "Preston Wallace",
   "license": "ISC",
   "dependencies": {
-    "gpt3": "2.1.1",
+    "dotenv": "16.0.3",
+    "openai": "3.1.0",
     "parcel-bundler": "1.12.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
-  }
+  },
+  "type": "module"
 }
