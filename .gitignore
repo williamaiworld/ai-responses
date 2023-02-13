@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+.vscode
+.idea
+dist
+.cache
+.parcel-cache
+haters
+.env
+npm-debug.log*
+.npmrc
